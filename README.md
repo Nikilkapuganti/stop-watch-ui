@@ -40,46 +40,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 
-
-
-Deployement
-
-
-AWS App Runner Deployment Guide
-1. Create an App Runner Service:
-Navigate to the AWS Management Console.
-Select "Create service."
-Choose your source repository (GitHub, GitLab, or Bitbucket).
-Configure build settings based on your project type (e.g., Node.js, Python).
-2. Configure Environment Variables:
-In the App Runner service settings, find the environment variables section.
-Set essential environment variables, including sensitive information like the MongoDB Atlas connection URL.
-Ensure the MongoDB Atlas connection URL is securely stored as an environmental variable.
-3. Define Service Settings:
-Specify service settings such as the number of instances, CPU, and memory.
-Adjust these settings according to your application's requirements for optimal performance.
-4. Connect MongoDB Atlas URL and Add to Environmental Variables:
-Retrieve the MongoDB Atlas connection URL from your MongoDB Atlas dashboard.
-In the App Runner settings, set up an environmental variable to store the MongoDB Atlas URL securely.
-5. Deploy:
-Initiate the deployment process from the AWS App Runner console.
-Monitor the deployment status to ensure a successful deployment.
-AWS App Runner will automatically handle the build and deployment process based on your configuration.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
